@@ -1,0 +1,13 @@
+.aflem{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.img{
+  height: 400px;
+}
+
+#search{
+  width: 20%;
+}
