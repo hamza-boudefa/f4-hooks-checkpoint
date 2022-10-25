@@ -1,12 +1,14 @@
 import React from 'react'
-import { Container, Form, FormControl, Navbar } from 'react-bootstrap'
+import { Button, Container, Form, FormControl, Navbar } from 'react-bootstrap'
 import ReactStars from 'react-stars'
 
+import {LinkContainer} from 'react-router-bootstrap'
 const NavBar = ({handleSearch, handleRate}) => {
   return (
     <div>
         <Navbar bg="dark" variant="dark">
         <Container>
+          <LinkContainer to='/'>
           <Navbar.Brand href="#home">
             <img
               alt=""
@@ -17,6 +19,11 @@ const NavBar = ({handleSearch, handleRate}) => {
             />{' '}
             NetFlix (balouchi)
           </Navbar.Brand>
+          </LinkContainer>
+         
+          <LinkContainer to="movielist" >
+          <Button> movie list</Button>
+          </LinkContainer>
           <ReactStars
   count={5}
   size={24}

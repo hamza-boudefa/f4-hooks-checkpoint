@@ -1,6 +1,7 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import { Button, Card } from 'react-bootstrap'
 import ReactStars from 'react-stars'
+import {LinkContainer} from "react-router-bootstrap"
 const Movie = ({movie}) => {
   return (
     <div >
@@ -17,6 +18,10 @@ const Movie = ({movie}) => {
   value={movie.rate}
   size={24}
   color2={'#ffd700'} />
+  <LinkContainer  to={`/movie/${movie.id}`}>
+  <Button >Trailer</Button>
+  </LinkContainer>
+ 
       </Card.Body>
     </Card>
     </div>
